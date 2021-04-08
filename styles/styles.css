@@ -1,0 +1,1294 @@
+/* INHOUDSOPGAVE
+
+Custom-fonts		36 / 71
+
+index.html			73 / 151
+
+Navbar 				153 / 200
+
+Footer 				202 / 263
+
+home.html			265 / 334
+
+bieren.html 		337 / 613
+
+locatie.html 
+proeverij.html 		615 / 745
+
+events.html			747 / 855
+
+login.html 			856 / 933
+
+account.html		934 / 1060
+
+winkelwagen.html	1061 / 1127
+
+contact.html		1129 / 1235
+
+overons.html		1236 / 1294
+
+
+
+*/
+* {
+	margin: 0 auto;
+}
+@font-face{
+	font-family: "Poppins";
+	src: url("../fonts/PoppinsRegular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: "Poppins";
+	src: url("../fonts/PoppinsMedium.ttf");
+	font-weight: bold;
+	font-style: bold;
+}
+@font-face{
+	font-family: "Poppins";
+	src: url("../fonts/PoppinsSemiBold.ttf");
+	font-weight: bolder;
+	font-style: bolder;
+}
+@font-face{
+	font-family: "Poppins";
+	src: url("../fonts/Poppinslight.ttf");
+	font-weight: lighter;
+	font-style: lighter;
+}
+font-face{
+	font-family: "Nexa";
+	src: url("../fonts/NexaBold.otf");
+	font-weight: bold;
+	font-style: bold;
+}
+font-face{
+	font-family: "Nexa";
+	src: url("../fonts/NexaLight.otf");
+	font-weight: lighter;
+	font-style: lighter;
+}
+
+/*Styling index (18+) */
+#background-landing {
+	background-color: black;
+}
+#background-landing main {
+	overflow: auto;
+	display: block;
+	justify-content: center;
+	text-align: center;
+	padding: 40px 40px 20px;
+}
+#landing {
+	margin: auto;
+	width: 50%;
+}
+#logo-landing {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	}
+#h1-landing {
+	font-family: Nexa, sans-serif;
+	font-style: bold;
+	color: white;
+	font-size: 1.375em;
+	}
+#p-landing {
+	color: #B9B9B9;
+	font-size: 0.8em;
+	font-family: Poppins, sans-serif;
+	font-style: lighter;
+	}
+#submit-landing {
+	background-color: #4A4A4A;
+	border: #707070;
+	font-family: Nexa, sans-serif;
+	font-size: 1.375em;
+	font-style: bold;
+	color: white;
+	padding: 20px 20px 20px;
+	border-radius: 6px;
+	display: none;
+	width: 20%;
+}
+#submit-landing:hover {
+	background-color: #272727;
+}
+#submit-landing:active {
+	background-color: #272727;
+}
+/* this line makes the scroller dissapear in the number fields for chrome, safari, edge, opera and firefox */
+#agevalidation input::-webkit-outer-spin-button,
+#agevalidation input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+.age input[type=number] {
+	-moz-appearance: textfield; 
+	}
+.age {
+	width: 5%;
+	padding: 20px;
+	margin: 0px 5px 0px;
+	font-size: 2.5em;
+	text-align: center;
+}
+#agevalidation input {
+	border: 2px solid black;
+	outline: none;
+	width: 10%;
+}
+#agevalidation input:required:valid {
+	border-color: green;
+}
+#agevalidation input:focus:invalid {
+	border-color: red;
+}
+#agevalidation #year-landing {
+	width: 20%;
+}
+
+/* styling navbar */
+body {
+	margin: 0 auto;
+	height: 100%;
+}
+header {
+	background-color: black;
+	margin: 0;
+}
+.nav {
+	text-align: center;
+	margin: 0;
+	font-family: Poppins, sans-serif;
+	font-weight: lighter;
+	font-size: 1vw;
+	padding: 10px 20px 10px;
+}
+.nav li {
+	list-style: none;
+	display: inline-block;
+}
+.nav a:hover {
+	color: grey;
+}
+.nav a {
+	color: white;
+	display: block;
+	margin: 0;
+	padding: 9px 18px 9px;
+	text-decoration: none;
+}
+.navbar ul{
+	padding-top: 0.5em;
+}
+.icon-nav {
+	float: right;
+}
+.nav i {
+	color: white;
+	padding-right: 20px;
+}
+.nav-img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+	padding: 5px 0px 0px 40px;	
+}
+
+/* Footer styling */
+footer {
+	display: inline-block;
+	background-color: black;
+	color: white;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+	text-align: left;
+	padding: 40px 40px 20px;
+}
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer ul {
+	padding: 0px;
+}
+.footer-icons {
+	float: left;
+	padding-right: 20px;
+}
+.social-footer {
+	padding-top: 5px;
+}
+ .footer-column {
+	width: 20%;
+	float: left;
+	padding: 0px 5px 0px;
+}
+.footer-column li {
+	list-style-type: none;
+	font-family: Poppins, sans-serif;
+	font-weight: lighter;
+	font-size: 0.8em;
+}
+.footer-column h3 {
+	font-family: Nexa;
+	font-weight: bold;
+	font-size: 1em;
+}
+.ul-footer {
+	line-height: 200%;
+}
+.footer a:hover {
+	color: grey;
+}
+.email-footer {
+	width: 60%;
+}
+.submit-footer {
+	cursor: pointer;
+	border-radius: 6px;
+	font-family: Nexa, sans-serif;
+	font-style: lighter;
+	font-size: 0.875em;
+	padding: 2px 5px 2px;
+}
+.submit-footer:hover {
+	background-color: grey;
+	border: black;
+}
+
+/* styling for the hero image and the text in the header */
+#heroimage {
+	max-width: 100%;
+	height: auto;
+}
+.hero {
+	position: relative;
+	text-align: center;
+}
+#herotext {
+	color: white;
+	position: absolute;
+	top: 40%;
+  	left: 10%;
+  	font-size: 4vw;
+  	font-family: Nexa, sans-serif;
+  	font-weight: bold;
+}
+#herolink {
+	color: white;
+	position: absolute;
+	top: 60%;
+  	left: 10%;
+  	font-size: 2vw;
+  	font-family: Nexa, sans-serif;
+  }
+ #herolink:hover {
+ 	color: black;
+ }
+
+ /* styling of the top 3 beers */
+ .mainhome {
+ 	overflow: auto;
+ 	padding: 40px 0px 40px;
+ }
+.home-summarybeers {
+	background-color: white;
+	margin: auto;
+	width: 80%;
+}
+ .home-beer {
+	text-align: left;
+	position: relative;
+	width: 30%;
+	float: left;
+	margin: 1%;
+	padding: 0px 0px 0px 15px;
+	background-color: white;
+}
+.home-summarybeers h2 {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 1em;
+}
+.home-summarybeers p {
+	font-family: Poppins, sans-serif;
+	font-weight: lighter;
+	font-size: 0.875em;
+}
+.home-beer img {
+	float: left;
+	padding: 10px 0px;
+}
+.homebeer-text {
+	padding-left: 10%;
+	overflow: hidden;
+}
+.checked {
+	color: orange;
+}
+
+
+/* styling bieren.html */
+
+/* styling for specific background */
+#firewire-display {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/firewirebck.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	position: relative;
+}
+.h1firewire {
+	color: #F7F36E;
+}
+#anykey-display {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/anykeybck.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	position: relative;
+	display: none;
+}
+.h1anykey {
+	color: #C3F37F;
+}
+#bruteforce-display {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/bruteforcebck.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	position: relative;
+	display: none;
+}
+.h1bruteforce {
+	color: #A82DA2;
+}
+#ref5resh-display {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/ref5eshbck.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	position: relative;
+	display: none;
+}
+.h1ref5resh {
+	color: #51BFF9;
+}
+#rsi-display {
+	width: 100vw;
+	height: 95vh;
+	display: flex;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(../images/rsibck.png);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	position: relative;
+	display: none;
+}
+.h1rsi {
+	color: #F96830;
+}
+/* styling for all displays */
+.beerdisplay-text {
+	color: white;
+	font-family: Poppins, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	position: relative;
+	top: 10%;
+	width: 80%;
+}
+.beerdisplay-text img {
+	float: left;
+	padding-right: 40px;
+	max-width: 100%;
+	height: auto;
+}
+.beerdisplay-text h1 {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 2.25em;
+	margin-bottom: 10px;
+}
+
+.beerdisplay-text ul {
+	margin-top: 10px;
+	list-style-type: none;
+	line-height: 140%
+}
+.pricedisplay {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 1.2em
+}
+.orderbutton {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1.5em;
+	padding: 6px 60px 6px 60px;
+	outline: none;
+}
+.orderbutton:hover {
+	background-color: #D5D5D5;
+}
+.orderbutton:active {
+	background-color: #B4B4B4;
+}
+.beerdisplay-bottom-text {
+	color: white;
+	position: absolute;
+	bottom: 5%;
+	font-family: Poppins, sans-serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	left: 30%;
+}
+.left, .right {
+	color: white;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	font-size: 3em;
+}
+.right {
+	right: 0;
+}
+.left:hover, .right:hover {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+/* Styling product page */
+#storecontent {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 20px 0px 40px;
+}
+.product {
+	width: 25%;
+	position: relative;
+}
+.productcontent {
+	box-sizing: border-box;
+	margin: 5px;
+	padding: 10px;
+}
+.product img {
+	padding-bottom: 10px;
+	display: block;
+}
+.product svg {
+	padding: 5px 0px 5px;
+}
+.product h1 {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.product p {
+	font-family: Poppins, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	color: #717171;
+}
+.productprice {
+	color: black;
+}
+.productmore {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 2px 20px 2px 20px;
+	outline: none;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#moreinfobox {
+	display: none;
+	position: fixed;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.moreinfo {
+	background-image: url(../images/gradientachtergrond.png);
+	margin: auto;
+	padding: 20px;
+	border: 1px solid black;
+	width: 60%;
+	height: 60%;
+	color: white;
+	font-family: Poppins, sans-serif;
+	font-weight: lighter;
+	font-size: 1em;
+	text-align: left;
+}
+.moreinfo h1 {
+	font-family: Nexa, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 20px 0px 10px;
+}
+.moreinfo img {
+	float: left;
+	max-width: 100%;
+	height: auto;
+	padding: 0px 60px 0px 100px;
+}
+.moreinfo ul {
+	list-style-type: none;
+	padding-top: 10px;
+}
+.product img:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+.product img:hover + .productmore { 
+	opacity: 1;
+}
+.productmore:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.closepopup {
+	color: white;
+	cursor: pointer;
+	float: right;
+	font-size: 1em;
+	font-weight: bold;
+}
+.closepopup:hover, .closepopup:focus {
+	color: grey;
+	text-decoration: none;
+}
+/* making the product page responsive */
+@media only screen and (max-width: 1024px) {
+	.product {
+		width: 33%;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.product {
+		width: 50%;
+	}
+}
+
+/* styling proeverij.html and locatie.html */
+
+/* styling images to each side of the form */
+.imgboxleft {
+	height: 300px;
+	width: 300px;
+	float: left;
+	margin-top: 100px;
+	margin-left: 80px;
+}
+.imgboxleft img {
+	height: auto;
+	width: 300px;
+	padding-top: 40px;
+}
+.imgboxright {
+	height: 300px;
+	width: 300px;
+	float: right;
+	margin-top: 100px;
+	margin-right: 80px;
+}
+.imgboxright img {
+	height: auto;
+	width: 300px;
+	padding-top: 40px;
+}
+
+/* styling form */
+.proeverij, .locatie {
+	text-align: center;
+	padding: 30px 0px 150px 0px;
+}
+.formbox {
+	background-image: url(../images/gradientachtergrond.png);
+	max-width: 35%;
+}
+.formtitle {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	padding-right: 50px;
+}
+.infoform {
+	font-family: Poppins, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+}
+.proeverij form, .locatie form {
+	max-width: 60%;
+	text-align: left;
+	color: white;
+	padding: 20px 20px 20px 60px;
+}
+.proeverij hr, .locatie hr {
+	border-color: grey;
+}
+.proeverij label, .locatie label {
+	font-family: Poppins, sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+}
+.proeverij input, .locatie input {
+	width: 90%;
+	margin: 8px 0px;
+	padding: 10px 0px 10px 5px;
+	font-family: Poppins;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+.proeverij textarea, .locatie textarea {
+	width: 90%;	
+	padding: 12px 0px 12px 5px;
+	margin: 8px 0px;
+	outline: none;
+	border: 2px solid black;
+}
+.proeverij input, .locatie input {
+	border: 2px solid black;
+	outline: none;
+}
+.proeverij input:required:valid, .locatie input:required:valid {
+	border-color: green;
+}
+.proeverij input:focus:invalid, .locatie input:focus:invalid {
+	border-color: red;
+}
+.locatie textarea:required:valid {
+	border-color: green;
+}
+.locatie textarea:focus:invalid {
+	border-color: red;
+}
+.proeverij form #submit, .locatie form #submit {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+}
+.proeverij form #login, .locatie form #login {
+	background-color: #B4B4B4;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+	border-color: black;
+}
+.proeverij form #submit:hover, .proeverij form #login:hover, .locatie form #submit:hover, .locatie form #login:hover {
+	background-color: #D5D5D5;
+}
+.proeverij form #submit:active, .proeverij form #login:active, .locatie form #login:active, .locatie form #login:active {
+	background-color: #D5D5D5;
+}
+/* formdp is used to align date and persons field next to each other and keep the labels on top */
+.formdp {
+	width: 44%;
+	display: inline-block;
+}
+.formdp label {
+	display: block;
+}
+.otheroption {
+	font-family: Poppins, sans-serif;
+	font-weight: normal;
+	font-size: 1em;	
+}
+
+/* styling events.html */
+.events {
+	text-align: center;
+	height: 800px;
+	margin-top: 40px;
+}
+.pagetitle {
+	margin-bottom: 20px;
+}
+.event1, .event2 {
+	border: 1px solid;
+	width: 70%;
+	height: 40%;
+	font-family: Poppins, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+}
+.event1 {
+	background-image: url(../images/winterfestival.png);
+	background-size: cover;
+	position: relative;
+}
+.event2 {
+	margin-top: 20px;
+	background-image: url(../images/tapfest.png);
+	background-size: cover;
+	position: relative;
+}
+
+.eventtext {
+	background: rgba(255, 255, 255, 0.7);
+	height: 40%;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+.eventinfo {
+	width: 30%;
+	position: absolute;
+	left: 10%;
+	bottom: 30%;
+	text-align: left;
+}
+.eventsummary {
+	width: 40%;
+	position: absolute;
+	right: 10%;
+	bottom: 30%;
+}
+.eventtitle {
+	font-family: Nexa, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.pagetitle {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+.event1:hover .eventtext {
+	height: 80%;
+}
+.event2:hover .eventtext {
+	height: 80%;
+}
+.event1:hover .eventsummary, .event1:hover .eventinfo {
+	bottom: 60%;
+}
+.event2:hover .eventsummary, .event2:hover .eventinfo {
+	bottom: 60%;
+}
+.hoverbutton {
+	opacity: 0;
+	position: absolute;
+	bottom: 10%;
+	right: 30%;
+	transition: 0.3s;
+}
+.eventprice {
+	opacity: 0;
+	position: absolute;
+	bottom: 20%;
+	left: 10%;
+	transition: 0.3s;
+}
+.hoverbutton .buttonagenda {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+	cursor: pointer;
+}
+.buttonagenda {
+	text-decoration: none;
+	color: black;
+}
+.buttonagenda:hover {
+	background-color: #D5D5D5;
+}
+.event1:hover .hoverbutton, .event1:hover .eventprice {
+	opacity: 1;
+}
+.event2:hover .hoverbutton, .event2:hover .eventprice {
+	opacity: 1;
+}
+/* styling loging page */
+.loginpage {
+	height: 800px;
+	text-align: center;
+	color: white;
+}
+.loginbox {
+	background-image: url(../images/gradientachtergrond.png);
+	max-width: 35%;
+	margin-top: 80px;
+	padding: 20px 0 60px 0;
+	font-family: Poppins, sans-serif;
+}
+.loginbox h1 {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.loginbox label {
+	float: left;
+	padding-left: 100px;
+	font-size: 1em;
+	font-weight: bolder;
+}
+.loginbox hr {
+	border-color: grey;
+	width: 80%;
+}
+.loginbox input {
+	border: 2px solid black;
+	outline: none;
+}
+.loginbox input:required:valid {
+	border-color: green;
+}
+.loginbox input:focus:invalid {
+	border-color: red;
+}
+.loginbox form #submit, .loginbox form #login {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+}
+.loginbox form #login {
+	background-color: #D5D5D5;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+	border-color: black;
+}
+.loginbox form #submit:hover, .loginbox form #login:hover {
+	background-color: #D5D5D5;
+}
+.loginbox form #submit:active, .loginbox form #login:active {
+	background-color: #D5D5D5;
+}
+.loginbox input {
+	width: 60%;
+	padding: 12px 0 12px 5px;
+	margin: 12px 0 12px 0;
+	font-family: Poppins, sans-serif;
+}
+#password {
+	color: white;
+}
+.newaccount label {
+	display: inline-block;
+}
+input[type=checkbox] {
+	width: 40%;
+}
+
+/* styling account.html */
+.accountcart {
+	display: inline-block;
+	height: 900px;
+}
+/* the list to the left side of the page */
+.accountlist {
+	list-style-type: none;
+}
+.accountlist a {
+	color: black;
+}
+#asideacc {
+	position: absolute;
+	left: 10%;
+	top: 15%;
+	font-family: Poppins, sans-serif;
+}
+#asideacc h2 {
+	font-size: 1.375em;
+	font-weight: bold;
+}
+#asideacc ul {
+	line-height: 200%;
+	padding: 0;
+	font-weight: normal;
+	font-size: 1em;
+}
+/* the box in which the items will be */
+.mainsection {
+	width: 150%;
+	height: auto;
+	transform: translateX(150px);
+	margin-top: 40px;
+}
+.accounttitle {
+	font-family: Poppins, sans-serif;
+	font-size: 1.4em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.accountdescr {
+	font-family: Poppins, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+.shoppingcart {
+	background-image: url(../images/gradientachtergrond.png);
+	box-sizing: border-box;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+.carttitle {
+	height: 60px;
+	margin: 20px 0 0 80px;
+	font-family: Poppins, sans-serif;
+	font-weight: bold;
+	font-size: 1.375em;
+}
+/* the items */
+.item {
+	display: flex;
+	padding: 20px 30px;
+	height: 180px;
+	font-family: Poppins, sans-serif;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+.itemimg {
+	margin-right: 50px;
+}
+.itemdescr {
+	padding-top: 10px;
+	margin-right: 100px;
+	width: 40%;
+}
+.itemdescr span {
+	display: block;
+}
+.itemdescr span:first-child {
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.itemdescr span:last-child {
+	margin-top: 8px;
+}
+.quantity {
+	margin-top: 8px;
+}
+.quantity p {
+	padding-top: 10px;
+}
+.quantity span:first-child {
+	margin-bottom: 30px;
+}
+.quantity span:last-child {
+	margin-top: 30px;
+}
+.quantity span {
+	display: block;
+	color: white;
+}
+.quantity a {
+	color: white;
+}
+
+.shoppingcart hr {
+	width: 80%;
+	border-color: grey
+}
+.mainsection button {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+	margin: 20px 0px 0px 150px;
+}
+.mainsection button:hover {
+	background-color: grey;
+}
+/* styling winkelwagen.html */
+.mainsectioncart {
+	width: 150%;
+	height: auto;
+	margin-top: 60px;
+}
+#asidecart {
+	position: absolute;
+	width: 15%;
+	right: 8%;
+	top: 15%;
+	background-image: url(../images/gradientachtergrond.png);
+	color: white;
+	text-align: left;
+}
+#asidecart span {
+	display: block;
+	font-family: Poppins, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	margin-top: 20px;
+	margin-left: 50px;
+	text-align: left;
+	word-spacing: 20px;
+}
+
+#asidecart hr {
+	margin: 10px 0px 10px 20px;
+}
+#asidecart span:first-child {
+	margin-bottom: 20px;
+	font-family: Nexa, sans-serif;
+	font-size: 1.375em;
+	font-weight: bold;
+}
+#asidecart hr {
+	width: 80%;
+	border-color: grey;
+}
+#asidecart button {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 0.8em;
+	padding: 5px 20px 5px 20px;
+	outline: none;
+	margin: 10px 0 10px 70px;
+}
+#asidecart button:hover {
+	background-color: grey;
+}
+.mainsectioncart button {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.mainsectioncart button:hover {
+	background-color: grey;
+}
+
+/* styling contact.html */
+.contact {
+	display: flex;
+	height: 900px;
+}
+.faq {
+	width: 50%;
+	margin-right: 100px;
+}
+.contactform {
+	width: 50%;
+	text-align: center;
+}
+.faq h1 {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	margin: 100px 0 40px 0;
+}
+.contactform h1 {
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+	margin: 100px 0 10px 0;
+}
+.contactform p {
+	margin-bottom: 20px;
+}
+.contact h2 {
+	font-family: Poppins, sans-serif;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.contact p {
+	font-family: Poppins, sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+}
+.faq div {
+	margin-bottom: 20px;
+}
+/* styling contactform */
+.contactform {
+	text-align: center;
+	padding: 0px 0px 0px 0px;
+}
+.contactform form {
+	background-image: url(../images/gradientachtergrond.png);
+	max-width: 35%;
+}
+.contactform form {
+	max-width: 60%;
+	text-align: left;
+	color: white;
+	padding: 20px 20px 20px 60px;
+}
+.contact label {
+	font-family: Poppins, sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+}
+.contact input {
+	width: 90%;
+	margin: 8px 0px;
+	padding: 10px 0px 10px 5px;
+	font-family: Poppins, sans-serif;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+.contact input {
+	border: 2px solid black;
+	outline: none;
+}
+.contact input:required:valid {
+	border-color: green;
+}
+.contact input:focus:invalid {
+	border-color: red;
+}
+.contact textarea:focus:invalid {
+	border-color: green;
+}
+.contact textarea:required:valid {
+	border-color: green;
+}
+.contact textarea {
+	width: 90%;	
+	padding: 12px 0px 12px 5px;
+	margin: 8px 0px;
+	outline: none;
+	border: 2px solid black;
+}
+.contact form #submit {
+	background-color: white;
+	font-family: Nexa, sans-serif;
+	font-weight: bold;
+	border-radius: 6px;
+	font-size: 1em;
+	padding: 10px 20px 10px 20px;
+	outline: none;
+}
+.contact form #submit:hover {
+	background-color: #D5D5D5;
+}
+.contact form #submit:active {
+	background-color: #D5D5D5;
+}
+/* styling overons.html */
+.about {
+	text-align: center;
+}
+.about h1 {
+	font-family: Nexa, sans-serif;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+.about img {
+	width: 60%;
+	height: auto;
+	margin-bottom: 20px;
+}
+.about article {
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: center;
+}
+.about div {
+	width: 20%;
+	margin: 0;
+	margin-left: 5%;
+	text-align: left;
+}
+.about div:first-child {
+	margin: 0;
+}
+.about h2 {
+	text-align: center;
+	font-family: Poppins, sans-serif;
+	font-weight: bolder;
+	font-size: 1.2em;
+}
+.about p {
+	font-family: Poppins, sans-serif;
+	font-weight: medium;
+	font-size: 1em;
+}
+.mainref {
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	left: 30%;
+	font-family: Poppins, sans-serif;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+.asideref {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+}
+.asideref a {
+	color: black;
+	text-decoration: none;
+}

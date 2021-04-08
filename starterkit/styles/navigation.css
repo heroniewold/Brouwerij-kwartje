@@ -1,0 +1,29 @@
+/* navigation */
+ul {
+	margin: 0;
+	padding: 0;
+}
+nav {
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+nav ul li {
+	float: left;
+	list-style: none;
+}
+nav ul li a {
+	display: block;
+	padding: 5px 15px;
+	font-size: 16px;
+	line-height: 16px;
+	border-right: 1px solid #828282;
+	text-decoration: none;
+}
+nav ul li:last-child a {
+	border: none;
+	padding-right: 0;
+}
+nav ul li.active a {
+	color: #F2C94C;
+}

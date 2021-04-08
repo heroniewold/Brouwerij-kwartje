@@ -1,0 +1,54 @@
+/* layout */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	background-color: #e5e5e5;
+	font-family: 'Arial', sans-serif;
+	font-weight: 400;
+	color: #000;
+}
+.container {
+	width: 1100px; /* vaste breedte, maar kan natuurlijk ook min/max en in percentages */
+	/* width: 80%; */
+	overflow: hidden; /* clearfix */
+	padding: 40px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.column-wrapper,
+main {
+	width: 100%;
+	overflow: hidden; /* clearfix */
+}
+.column-wrapper {
+	padding: 0 0 20px 0;
+}
+.column {
+	float: left;
+	width: 50%;
+	padding: 40px 40px 0 0;
+}
+.column.intro {
+	margin: 0;
+}
+
+/* footer */
+footer {
+	clear: left;
+	background-color: #e5e5e5;
+	font-size: 13px;
+	font-style: italic;
+	padding: 10px;
+	text-align: center;
+}
+
+/* example breakpoint */
+/* @media (min-width: 800px) {
+	body {
+		background: lightblue;
+	}
+} */

@@ -1,0 +1,17 @@
+h1,h2,h3 {
+    font-family: Tahoma, sans-serif;
+    margin: 0 0 20px 0;
+}
+a {
+	color: #2F80ED;
+	text-decoration: underline;
+}
+p {
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0 0 20px 0;
+}
+.intro p {
+    font-size: 18px;
+    line-height: 28px;
+}

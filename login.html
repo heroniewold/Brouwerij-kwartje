@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Brouwerij Kwartje</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"> 
+    <link rel="shortcut icon" type="image/ico" href="images/kwartje.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconkit van fontawesome.com -->
+    <script src="https://kit.fontawesome.com/9e14d77e4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html"><img src="images/BrouwerijVerticaal.png" alt="Brouwerij het Kwartje" class="nav-img" width="180" height="51"></a>
+            <ul class="nav">
+                <li><a href="bieren.html">Bieren</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="proeverij.html">Proeverij</a></li>
+                <li><a href="locatie.html">Locatie</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- icons vanuit de iconkit, gebruikt voor account en winkelwagen -->
+                <li class="icon-nav"><a href="login.html"><i class="fas fa-user-circle fa-2x"></i></a></li>
+                <li class="icon-nav"><a href="winkelwagen.html"><i class="fas fa-shopping-cart fa-2x"></i></a></li> 
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="loginpage">
+        <div class="loginbox">
+            <h1 class="logintitle">Inloggen</h1>
+            <p class="logininfo">Vul uw gegevens in om in te loggen</p><br />
+            <form action="account.html" method="post">
+                <label for="firstname">Gebruikersnaam</label><br />
+                <input type="text" id="firstname" name="firstname" placeholder="JanJansen2000" required><br />
+                <label for="lastname">Wachtwoord</label><br />
+                <input type="password" id="lastname" name="lastname" placeholder="wachtwoordveilig" required><br />
+                <input type="button" onclick="window.location.href='account.html'" id="submit" value="Inloggen"><br />
+                <a id="password" href="wachtwoord.html">Wachtwoord vergeten?</a><br /><br />
+                <hr /><br />
+                <p class="otheroption">Heeft u nog geen account?</p>
+                <input type="button" onclick="window.location.href='newacc.html'" id="login" value="Account aanmaken">
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Navigatie</h3>
+            <ul>
+                <li><a href="bieren.html">Winkel</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="proeverij.html">Proeverij</a></li>
+                <li><a href="locatie.html">Locatie</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Algemene info</h3>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul class="footer-icons">
+                <!-- facebook has a different class to push the other icons down to align with the socialmedia names -->
+                 <li class="facebook-footer"><i class="fab fa-facebook-f fa-2x"> </i></li>
+                 <li class="social-footer"><i class="fab fa-twitter fa-2x"> </i></li>
+                 <li class="social-footer"><i class="fab fa-instagram fa-2x"> </i></li>
+            </ul>
+            <ul class="ul-footer">
+                <li><a href="https://www.facebook.com/BrouwerijKwartje/">@BrouwerijKwartje</a></li>
+                <li><a href="https://twitter.com/KwartjeBier/">@KwartjeBier</a></li>
+                <li><a href="https://www.instagram.com/brouwerijkwartje/">@brouwerijbwartje</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Inschrijven voor nieuwsbrief</h3>
+            <ul>
+            <li>Meld je aan voor nieuws over Brouwerij Kwartje</li>
+            <li><form action="mailtouser@gmail.com" method="post">
+                <input type="email" class="email-footer" name="email" placeholder="jan.jansen@gmail.com">
+                <input type="button" class="submit-footer" value="Aanmelden">
+            </form></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

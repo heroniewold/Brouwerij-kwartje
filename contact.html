@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8" />
+    <title>Brouwerij Kwartje</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"> 
+    <link rel="shortcut icon" type="image/ico" href="images/kwartje.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconkit van fontawesome.com -->
+    <script src="https://kit.fontawesome.com/9e14d77e4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="home.html"><img src="images/BrouwerijVerticaal.png" alt="Brouwerij het Kwartje" class="nav-img" width="180" height="51"></a>
+            <ul class="nav">
+                <li><a href="bieren.html">Bieren</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="proeverij.html">Proeverij</a></li>
+                <li><a href="locatie.html">Locatie</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- icons vanuit de iconkit, gebruikt voor account en winkelwagen -->
+                <li class="icon-nav"><a href="login.html"><i class="fas fa-user-circle fa-2x"></i></a></li>
+                <li class="icon-nav"><a href="winkelwagen.html"><i class="fas fa-shopping-cart fa-2x"></i></a></li> 
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact">
+        <article class="faq">
+            <h1>Veelgestelde vragen</h1>
+            <div><h2>Kan ik jullie boeken om op een feestje achter de bar te staan?</h2>
+            <p>Dat kan ja, vul hiernaast het contactformulier in met de specificaties van het feest. Wij reageren binnen 5 werkdagen.</p></div>
+            <div><h2>Brengen jullie vaak nieuw bier uit?</h2>
+            <p>Wij proberen per seizoen een nieuw biertje uit te brengen, maar dit hangt natuurlijk af van het succes wat wij behalen en het aantal goede ingredienten die wij tot beschikking krijgen.</p></div>
+            <div><h2>Kan iemand nog een laatste vraag bedenken?</h2>
+            <p>Dat zou natuurlijk kunnen, maar als je een beetje door had gewerkt, had je genoeg tijd gehad om zelf een vraag te kunnen bedenken. Helaas zit dat er niet helemaal meer in.</p></div>
+        </article>
+
+        <article class="contactform">
+            <h1>Contact opnemen</h1>
+            <p>Heeft u een vraag die niet tussen de veelgestelde vragen staat, neem dan contact met ons op!</p>
+            <form action="mailto:johhny.kippie@gmail.com" method="post">
+                <label for="firstname">Voornaam</label><br />
+                <input type="text" name="firstname" id="firstname" placeholder="Jan" required><br />
+                <label for="lastname">Achternaam</label><br />
+                <input type="text" name="lastname" id="lastname" placeholder="Jansen" required><br />
+                <label for="email">Emailadres</label><br />
+                <input type="email" name="email" id="email" placeholder="jan.jansen@gmail.com" required><br />
+                <label for="textarea">Vraag</label><br />
+                <textarea id="textarea" required></textarea><br />
+                <input type="submit" name="submit" id="submit" value="Verzenden">
+            </form>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Navigatie</h3>
+            <ul>
+                <li><a href="bieren.html">Winkel</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="proeverij.html">Proeverij</a></li>
+                <li><a href="locatie.html">Locatie</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Algemene info</h3>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul class="footer-icons">
+                <!-- facebook has a different class to push the other icons down to align with the socialmedia names -->
+                 <li class="facebook-footer"><i class="fab fa-facebook-f fa-2x"> </i></li>
+                 <li class="social-footer"><i class="fab fa-twitter fa-2x"> </i></li>
+                 <li class="social-footer"><i class="fab fa-instagram fa-2x"> </i></li>
+            </ul>
+            <ul class="ul-footer">
+                <li><a href="https://www.facebook.com/BrouwerijKwartje/">@BrouwerijKwartje</a></li>
+                <li><a href="https://twitter.com/KwartjeBier/">@KwartjeBier</a></li>
+                <li><a href="https://www.instagram.com/brouwerijkwartje/">@brouwerijbwartje</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Inschrijven voor nieuwsbrief</h3>
+            <ul>
+            <li>Meld je aan voor nieuws over Brouwerij Kwartje</li>
+            <li><form action="mailtouser@gmail.com" method="post">
+                <input type="email" class="email-footer" name="email" placeholder="jan.jansen@gmail.com">
+                <input type="button" class="submit-footer" value="Aanmelden">
+            </form></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>

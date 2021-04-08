@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<HTML lang="nl">
+<head>
+	<title>Brouwerij Kwartje</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="shortcut icon" type="image/ico" href="images/kwartje.ico">
+	<script src="https://kit.fontawesome.com/9e14d77e4d.js" crossorigin="anonymous"> </script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header>
+        <nav class="navbar">
+            <a href="home.html"><img src="images/BrouwerijVerticaal.png" alt="Brouwerij het Kwartje" class="nav-img" width="180" height="51"></a>
+            <ul class="nav">
+                <li><a href="bieren.html">Bieren</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="proeverij.html">Proeverij</a></li>
+                <li><a href="locatie.html">Locatie</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- icons vanuit de iconkit, gebruikt voor account en winkelwagen -->
+                <li class="icon-nav"><a href="login.html"><i class="fas fa-user-circle fa-2x"></i></a></li>
+                <li class="icon-nav"><a href="winkelwagen.html"><i class="fas fa-shopping-cart fa-2x"></i></a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main class="proeverij">
+    	<!-- two images to the left of the form -->
+    		<div class="imgboxleft"><img class="imagesleft" src="images/beerplate.png" alt="Een plaat met bier en snacks">
+  			<img class="imagesleft" src="images/circlebeer.png" alt="Een dienblad met 5 biertjes"></div> 
+  			<div class="imgboxright"><img class="imagesright" src="images/beerwithview.png" alt="Een biertje op een balkon met mooi uitzicht">
+    	    <img class="imagesright" src="images/burgerfood.png" alt="Een plaat met bier en snacks"></div>
+    	<h1 class="formtitle">Proeverij</h1>
+    	<p class="infoform">Wilt u een proeverij aanvragen, vul hieronder uw gegevens in</p><br />
+    	<div class="formbox">
+    		<form action="mailto:johhny.kippie@gmail.com" method="post">
+    			<label for="firstname">Voornaam</label><br />
+    			<input type="text" id="firstname" name="firstname" placeholder="Jan" required><br />
+    			<label for="lastname">Achternaam</label><br />
+    			<input type="text" id="lastname" name="lastname" placeholder="Jansen" required><br />
+    			<label for="email">Emailadres</label><br />
+    			<input type="email" id="email" name="email" placeholder="jan.jansen@gmail.com" required><br />
+    			<div class="formdp">
+    			<label for="persons">Personen</label>
+    			<input type="number" id="persons" name="persons" required>
+    		</div>
+    			<div class="formdp">
+    			<label for="date">Datum</label>
+    			<input type="date" id="date" name="date" required><br />
+    		</div>
+    			<label for="questions">Vragen/opmerkingen</label><br />
+    			<textarea id="questions" name="questions" placeholder="Vul hier uw vragen/opmerkingen in"></textarea><br />
+    			<input type="submit" id="submit" value="Verzenden"><br /><br />
+    			<hr /><br />
+    			<p class="otheroption">Proeverij aanvragen op account</p>
+    			<input type="button" id="login" onclick="window.location.href='login.html'" value="Inloggen">
+    		</form>
+    	</div>
+	</main>
+	
+	<footer class="footer">
+        <div class="footer-column">
+            <h3>Navigatie</h3>
+            <ul>
+                <li><a href="bieren.html">Winkel</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="proeverij.html">Proeverij</a></li>
+                <li><a href="locatie.htl">Locatie</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Algemene info</h3>
+            <ul>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <ul class="footer-icons">
+                <!-- facebook has a different class to push the other icons down to align with the socialmedia names -->
+                 <li class="facebook-footer"><i class="fab fa-facebook-f fa-2x"> </i></li>
+                 <li class="social-footer"><i class="fab fa-twitter fa-2x"> </i></li>
+                 <li class="social-footer"><i class="fab fa-instagram fa-2x"> </i></li>
+            </ul>
+            <ul class="ul-footer">
+                <li><a href="https://www.facebook.com/BrouwerijKwartje/">@BrouwerijKwartje</a></li>
+                <li><a href="https://twitter.com/KwartjeBier/">@KwartjeBier</a></li>
+                <li><a href="https://www.instagram.com/brouwerijkwartje/">@brouwerijbwartje</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Inschrijven voor nieuwsbrief</h3>
+            <ul>
+            <li>Meld je aan voor nieuws over Brouwerij Kwartje</li>
+            <li><form action="mailtouser@gmail.com" method="post">
+                <input type="email" class="email-footer" name="email" placeholder="jan.jansen@gmail.com">
+                <input type="button" class="submit-footer" value="Aanmelden">
+            </form></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</HTML>
